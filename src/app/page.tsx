@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function ClawMark({ className }: { className?: string }) {
@@ -39,9 +40,17 @@ export default function Home() {
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <Link
             href="/"
-            className="font-[family-name:var(--font-syne)] text-lg font-semibold tracking-tight text-stone-50"
+            className="flex items-center gap-2 outline-offset-4 transition-opacity hover:opacity-90 focus-visible:rounded-md"
           >
-            Claw<span className="text-orange-400">Brother</span>
+            <Image
+              src="/logo.png"
+              alt="Claw Brother logo"
+              width={128}
+              height={128}
+              className="h-10 w-10 object-contain sm:h-11 sm:w-11"
+              priority
+            />
+            <span className="sr-only">Claw Brother</span>
           </Link>
           <nav className="flex items-center gap-6 text-sm text-stone-400">
             <a
