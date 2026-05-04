@@ -105,7 +105,7 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-5">
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/@ClawBrotherNJ"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-lime-300"
