@@ -19,11 +19,11 @@ export default function Home() {
             className="flex items-center gap-2 outline-offset-4 transition-opacity hover:opacity-90"
           >
             <Image
-              src="/logo.png"
+              src="/logo-badge.png"
               alt="Claw Brother logo"
               width={128}
               height={128}
-              className="h-10 w-10 object-contain sm:h-11 sm:w-11"
+              className="h-11 w-11 rounded-full object-cover sm:h-12 sm:w-12"
               priority
             />
             <span className="font-[family-name:var(--font-syne)] text-base font-bold tracking-wide text-lime-300">
