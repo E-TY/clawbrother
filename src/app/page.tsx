@@ -105,9 +105,9 @@ export default function Home() {
               How it works
             </h3>
             <p className="mt-2 text-sm text-stone-300">
-              When users click this section, they see your featured brand visual.
+              A fully managed machine model designed for steady monthly returns.
             </p>
-            <div className="mt-5 overflow-hidden rounded-xl border border-white/10 bg-black/20">
+            <div className="relative mt-5 overflow-hidden rounded-xl border border-white/10 bg-black/20">
               <Image
                 src="/how-it-works.png"
                 alt="Claw Brother how it works visual"
@@ -115,6 +115,24 @@ export default function Home() {
                 height={1024}
                 className="h-auto w-full object-cover"
               />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/60 to-transparent p-4 sm:p-6">
+                <p className="font-[family-name:var(--font-syne)] text-lg font-bold text-lime-300 sm:text-2xl">
+                  Zero Cost, Zero Effort, Pure Profit.
+                </p>
+                <p className="mt-1 text-xs font-medium text-stone-200 sm:text-sm">
+                  We Install, We Maintain, You Earn.
+                </p>
+                <p className="mt-1 text-xs text-stone-300 sm:text-sm">
+                  A Worry-Free Revenue Stream for Your Shop.
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-lime-200 sm:text-sm">
+                  Steady Monthly Returns
+                </p>
+                <p className="mt-1 text-[11px] text-stone-300 sm:text-xs">
+                  No-Cost Setup — Full-Service Maintenance — Guaranteed Monthly
+                  Income
+                </p>
+              </div>
             </div>
           </section>
         </section>
