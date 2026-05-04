@@ -50,14 +50,16 @@ export default function Home() {
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-lime-300">
               clawbrother.com
             </p>
-            <h1 className="pb-2 font-[family-name:var(--font-syne)] text-4xl font-extrabold leading-[1.2] tracking-tight text-white sm:pb-3 sm:text-5xl md:text-6xl">
-              Grab fun,
+            <h1 className="mb-2 pb-[0.34em] font-[family-name:var(--font-syne)] text-4xl font-extrabold leading-[1.32] tracking-tight text-white sm:text-5xl md:text-6xl">
+              Turn Empty Space
               <br />
-              build cool things.
+              into a Profit Center
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-stone-300 sm:text-lg">
-              A claw-machine inspired brand style landing page that highlights
-              your portfolio, gallery, and contact channels in one place.
+              Play. Earn. Grow
+            </p>
+            <p className="mt-1 max-w-xl text-base leading-relaxed text-lime-300 sm:text-lg">
+              More Smiles, More Sales
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <a
@@ -102,17 +104,18 @@ export default function Home() {
             <h3 className="font-[family-name:var(--font-syne)] text-2xl font-bold text-white">
               How it works
             </h3>
-            <ol className="mt-4 grid gap-3 text-sm text-stone-300 sm:grid-cols-3">
-              <li className="rounded-xl border border-white/10 bg-black/20 p-4">
-                1) Browse featured content in Gallery
-              </li>
-              <li className="rounded-xl border border-white/10 bg-black/20 p-4">
-                2) Reach out for project inquiries
-              </li>
-              <li className="rounded-xl border border-white/10 bg-black/20 p-4">
-                3) Follow social channels for updates
-              </li>
-            </ol>
+            <p className="mt-2 text-sm text-stone-300">
+              When users click this section, they see your featured brand visual.
+            </p>
+            <div className="mt-5 overflow-hidden rounded-xl border border-white/10 bg-black/20">
+              <Image
+                src="/how-it-works.png"
+                alt="Claw Brother how it works visual"
+                width={1024}
+                height={1024}
+                className="h-auto w-full object-cover"
+              />
+            </div>
           </section>
         </section>
       </main>
