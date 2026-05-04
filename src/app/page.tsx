@@ -31,13 +31,16 @@ export default function Home() {
             </span>
           </Link>
           <nav className="flex items-center gap-5 text-sm font-medium text-stone-300">
-            <a href="#gallery" className="transition-colors hover:text-lime-300">
+            <a href="/contents#gallery" className="transition-colors hover:text-lime-300">
               Gallery
             </a>
-            <a href="mailto:hello@clawbrother.com" className="transition-colors hover:text-lime-300">
+            <a href="/contact" className="transition-colors hover:text-lime-300">
               Contact
             </a>
-            <a href="#how-it-works" className="transition-colors hover:text-lime-300">
+            <a
+              href="/contents#how-it-works"
+              className="transition-colors hover:text-lime-300"
+            >
               How it works
             </a>
           </nav>
@@ -63,78 +66,34 @@ export default function Home() {
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <a
-                href="#gallery"
+                href="/contents#gallery"
                 className="inline-flex h-11 items-center justify-center rounded-full bg-lime-400 px-7 text-sm font-semibold text-[#091014] transition hover:bg-lime-300"
               >
                 View Gallery
               </a>
               <a
-                href="#how-it-works"
+                href="/contents#how-it-works"
                 className="inline-flex h-11 items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 text-sm font-medium text-white transition hover:border-lime-300/60 hover:text-lime-200"
               >
                 How it works
               </a>
             </div>
           </div>
-
-          <section
-            id="gallery"
-            className="mt-10 grid w-full gap-4 sm:grid-cols-3"
-          >
-            {["Arcade Mood", "Robot Identity", "Neon Visual"].map((title) => (
-              <article
-                key={title}
-                className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm"
-              >
-                <div className="mb-3 h-36 rounded-xl bg-gradient-to-br from-lime-400/20 to-cyan-400/15" />
-                <h2 className="font-[family-name:var(--font-syne)] text-lg font-semibold text-lime-200">
-                  {title}
-                </h2>
-                <p className="mt-1 text-sm text-stone-300">
-                  Replace this card with real project images or video thumbnails.
-                </p>
-              </article>
-            ))}
-          </section>
-
-          <section
-            id="how-it-works"
-            className="mt-12 w-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-left"
-          >
-            <h3 className="font-[family-name:var(--font-syne)] text-2xl font-bold text-white">
-              How it works
-            </h3>
-            <p className="mt-2 text-sm text-stone-300">
-              A fully managed machine model designed for steady monthly returns.
+          <div className="w-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-left">
+            <h2 className="font-[family-name:var(--font-syne)] text-2xl font-bold text-white">
+              Explore More in Contents
+            </h2>
+            <p className="mt-2 text-sm text-stone-300 sm:text-base">
+              Gallery photos and the full How It Works section are now on the
+              Contents page.
             </p>
-            <div className="relative mt-5 overflow-hidden rounded-xl border border-white/10 bg-black/20">
-              <Image
-                src="/how-it-works.png"
-                alt="Claw Brother how it works visual"
-                width={1024}
-                height={1024}
-                className="h-auto w-full object-cover"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/60 to-transparent p-4 sm:p-6">
-                <p className="font-[family-name:var(--font-syne)] text-lg font-bold text-lime-300 sm:text-2xl">
-                  Zero Cost, Zero Effort, Pure Profit.
-                </p>
-                <p className="mt-1 text-xs font-medium text-stone-200 sm:text-sm">
-                  We Install, We Maintain, You Earn.
-                </p>
-                <p className="mt-1 text-xs text-stone-300 sm:text-sm">
-                  A Worry-Free Revenue Stream for Your Shop.
-                </p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-lime-200 sm:text-sm">
-                  Steady Monthly Returns
-                </p>
-                <p className="mt-1 text-[11px] text-stone-300 sm:text-xs">
-                  No-Cost Setup — Full-Service Maintenance — Guaranteed Monthly
-                  Income
-                </p>
-              </div>
-            </div>
-          </section>
+            <a
+              href="/contents"
+              className="mt-4 inline-flex h-10 items-center justify-center rounded-full border border-lime-300/40 px-5 text-sm font-semibold text-lime-200 transition hover:border-lime-300 hover:text-lime-100"
+            >
+              Go to Contents
+            </a>
+          </div>
         </section>
       </main>
 
