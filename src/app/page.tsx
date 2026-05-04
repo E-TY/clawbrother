@@ -50,7 +50,7 @@ export default function Home() {
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-lime-300">
               clawbrother.com
             </p>
-            <h1 className="font-[family-name:var(--font-syne)] text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
+            <h1 className="pb-1 font-[family-name:var(--font-syne)] text-4xl font-extrabold leading-[1.16] tracking-tight text-white sm:text-5xl md:text-6xl">
               Grab fun,
               <br />
               build cool things.
